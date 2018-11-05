@@ -7,4 +7,5 @@
   'cms\\Controllers\\index' => 'modules\\cms\\controllers\\index.php',
   'October\\Demo\\Components\\Todo' => 'plugins\\october\\demo\\components\\Todo.php',
   'backend\\Controllers\\media' => 'modules\\backend\\controllers\\media.php',
+  'egemert\\wachtwoorden\\Plugin' => 'plugins\\egemert\\wachtwoorden\\Plugin.php',
 );

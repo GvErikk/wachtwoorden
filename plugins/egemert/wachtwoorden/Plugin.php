@@ -17,8 +17,8 @@ class Plugin extends PluginBase
     {
         return [
             'name'        => 'Wachtwoorden',
-            'description' => 'No description provided yet...',
-            'author'      => 'EGemert',
+            'description' => 'Plugin voor wachtwoord beheer.',
+            'author'      => 'Erik van Gemert',
             'icon'        => 'icon-leaf'
         ];
     }
@@ -81,16 +81,23 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-        return []; // Remove this line to activate
-
         return [
             'wachtwoorden' => [
                 'label'       => 'Wachtwoorden',
-                'url'         => Backend::url('egemert/wachtwoorden/mycontroller'),
-                'icon'        => 'icon-leaf',
+                'url'         => Backend::url('egemert/wachtwoorden/accounts'),
+                'icon'        => 'icon-unlock-alt',
                 'permissions' => ['egemert.wachtwoorden.*'],
                 'order'       => 500,
-            ],
+
+                'sideMenu' => [
+                    'accounts' => [
+                        'label'       => 'Klanten',
+                        'icon'        => 'icon-unlock-alt',
+                        'url'         => Backend::url('egemert/wachtwoorden/accounts'),
+                        'permissions' => ['egemert.wachtwoorden.*']
+                    ]
+                ]
+            ]
         ];
     }
 }

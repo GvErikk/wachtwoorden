@@ -1,1 +1,6 @@
 1.0.1: First version of Wachtwoorden
+1.0.2:
+    - Create the account table and login details table
+    - create_accounts_table.php
+    - create_login_details_table.php
+

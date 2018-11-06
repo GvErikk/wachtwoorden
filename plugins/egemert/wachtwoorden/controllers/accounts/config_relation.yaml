@@ -1,0 +1,7 @@
+LoginDetails:
+    label: Gegevens
+    view:
+        list: $/egemert/wachtwoorden/models/logindetails/columns.yaml
+        toolbarButtons: create|delete
+    manage:
+        form: $/egemert/wachtwoorden/models/logindetails/fields.yaml

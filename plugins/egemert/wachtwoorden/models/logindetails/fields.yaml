@@ -1,0 +1,13 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: Naam login
+    username:
+        label: Gebruikersnaam
+    password:
+        label: Wachtwoord
+    hostname:
+        label: Host

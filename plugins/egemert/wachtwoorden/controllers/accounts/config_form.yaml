@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Account
+
+# Model Form Field configuration
+form: $/egemert/wachtwoorden/models/account/fields.yaml
+
+# Model Class name
+modelClass: Egemert\Wachtwoorden\Models\Account
+
+# Default redirect location
+defaultRedirect: egemert/wachtwoorden/accounts
+
+# Create page
+create:
+    title: Create Account
+    redirect: egemert/wachtwoorden/accounts/update/:id
+    redirectClose: egemert/wachtwoorden/accounts
+
+# Update page
+update:
+    title: Edit Account
+    redirect: egemert/wachtwoorden/accounts
+    redirectClose: egemert/wachtwoorden/accounts
+
+# Preview page
+preview:
+    title: Preview Account

@@ -1,0 +1,14 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: Naam login
+        searchable: true
+    username:
+        label: Gebruikersnaam
+        searchable: true
+    hostname:
+        label: Host
+        searchable: true
